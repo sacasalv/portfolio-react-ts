@@ -1,4 +1,4 @@
-export function Card() {
+export function Hero() {
   return (
     <div className="card bg-[#B1C1CC] text-black p-4 shadow-[inset_3px_3px_5px_#5E659E,inset_-3px_-3px_5px_#5E659E] rounded-lg w-dvh">
       <div className="flex align-between justify-center overflow-hidden p-3">
