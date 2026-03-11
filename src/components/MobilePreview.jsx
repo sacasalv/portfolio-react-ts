@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const ICONOS = [
   { src: "instagram.png", alt: "Instagram" },
-  { src: "linkedin.png", alt: "LinkedIn" },
+  { src: "linkedin.png", alt: "Linkedin" },
   { src: "twitter.png", alt: "Twitter" },
   { src: "github.png", alt: "GitHub" },
   { src: "gmail.png", alt: "Gmail" },
@@ -18,7 +18,7 @@ export function MobilePreview() {
     >
       <div className="bg-white/1 backdrop-blur-[2px] h-full rounded-t-[30px] grid grid-cols-1 gap-2">
         <div className="absolute top-0 left-21 bg-black border-black-100 rounded-2xl w-25 h-8"></div>
-        <div className="h-full w-full grid grid-cols-3 mt-15">
+        <div className="max-h-50 h-full w-full grid grid-cols-3 mt-15">
           {ICONOS.map(({src, alt}) => (
             <div key={alt}>
               <img
@@ -26,6 +26,7 @@ export function MobilePreview() {
                 alt={alt}
                 className="inline-block size-15"
               />
+              <p className="text-xs p-0.5">{alt}</p>
             </div>
           ))}
         </div>
